@@ -63,7 +63,7 @@ int main(void)
             dout = 0;
         }
 	ain.read();
-	ain.read_u16();        
+//	ain.read_u16();        
         // print the percentage and 16 bit normalized values
 //        printf("percentage: %3.3f%%\n", ain.read()*100.0f);
 //        printf("normalized: 0x%04X \n", ain.read_u16());
