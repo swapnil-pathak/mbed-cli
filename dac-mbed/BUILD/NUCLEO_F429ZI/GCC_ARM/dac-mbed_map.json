@@ -3,16 +3,16 @@
         "module": "DAC.o", 
         "size": {
             ".data": 4, 
-            ".bss": 100, 
-            ".text": 358
+            ".bss": 72, 
+            ".text": 366
         }
     }, 
     {
         "module": "[fill]", 
         "size": {
             ".data": 4, 
-            ".bss": 14, 
-            ".text": 119
+            ".bss": 18, 
+            ".text": 155
         }
     }, 
     {
@@ -28,7 +28,15 @@
         "size": {
             ".data": 0, 
             ".bss": 0, 
-            ".text": 4668
+            ".text": 3208
+        }
+    }, 
+    {
+        "module": "[lib]/m.a", 
+        "size": {
+            ".data": 0, 
+            ".bss": 0, 
+            ".text": 5404
         }
     }, 
     {
@@ -100,13 +108,13 @@
         "size": {
             ".data": 4, 
             ".bss": 792, 
-            ".text": 7843
+            ".text": 7735
         }
     }, 
     {
         "summary": {
-            "static_ram": 23716, 
-            "total_flash": 45404
+            "static_ram": 23692, 
+            "total_flash": 49284
         }
     }
 ]
