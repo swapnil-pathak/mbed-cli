@@ -1,13 +1,14 @@
 #include "mbed.h"
 #include "afl_call.h"
 
-PwmOut led(LED1);
-
 // hardcoded options 1(global)
 int noHyperCall = 0; // dont make hypercalls
 int verbose = 0; // XXX Never turns on verbose mode, printf/scanf will hang mbed
 
+PwmOut led(LED2);
+
 int main() {
+
     char *buf;
     uint32_t sz;
 
@@ -32,12 +33,9 @@ int main() {
         // To launch afl w/o hang
         doneWork(0);
     }
-
-    // specify period first
-    led.period(4.0f);      // 4 second period
-    led.write(0.50f);      // 50% duty cycle, relative to period
-    //led = 0.5f;          // shorthand for led.write()
-    //led.pulsewidth(2);   // alternative to led.write, set duty cycle time in seconds
+    // specify period first, then everything else
+ //   led.period(4.0f);  // 4 second period
+    led.pulsewidth(2); // 2 second pulse (on)
+ //   while(1);          // led flashing
     doneWork(0);
-    //while(1);
 }
